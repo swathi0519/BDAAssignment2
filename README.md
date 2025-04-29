@@ -17,17 +17,11 @@ Node.js (v14 or higher)
 
 MongoDB (local or Atlas)
 
-Installation
-1. Clone the Repository
-bash
-Copy
-Edit
+### Installation
+## 1. Clone the Repository
 git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
 cd student-database-api
-2. Install Dependencies
-bash
-Copy
-Edit
+### 2. Install Dependencies
 npm install
 ## 3. Set Up MongoDB
 Use a local MongoDB or create a MongoDB Atlas cluster.
@@ -35,20 +29,14 @@ Use a local MongoDB or create a MongoDB Atlas cluster.
 Update the MongoDB connection URI in .env or server.js.
 
 ## 4. Run the Server
-bash
-Copy
-Edit
 npm start
 The API will start on http://localhost:3000 (or your specified port).
 
 ## API Endpoints
-1. Create a New Student
-Endpoint: POST /students
-Request Body:
-
+### 1. **Create a New Student**
+**Endpoint:** POST /students
+## Request Body:
 json
-Copy
-Edit
 {
   "name": "John Doe",
   "email": "john@example.com",
@@ -56,11 +44,8 @@ Edit
   "course": "Computer Science",
   "age": 20
 }
-Response:
-
+## Response:
 json
-Copy
-Edit
 {
   "message": "Student added successfully",
   "student": {
@@ -72,14 +57,12 @@ Edit
     "age": 20
   }
 }
-2. Get All Students
-Endpoint: GET /students
+### **2. Get All Students**
+**Endpoint:** GET /students
 
-Response:
-
+## Response:
 json
-Copy
-Edit
+```
 [
   {
     "_id": "xyz123",
@@ -90,22 +73,17 @@ Edit
     "age": 20
   }
 ]
-3. Update Student Details
-Endpoint: PUT /students/:id
-Request Body:
-
+```
+### **3. Update Student Details**
+**Endpoint:** PUT /students/:id
+## Request Body:
 json
-Copy
-Edit
 {
   "email": "john.doe@university.edu",
   "course": "AI and Data Science"
 }
-Response:
-
+## Response:
 json
-Copy
-Edit
 {
   "message": "Student updated successfully",
   "updatedStudent": {
@@ -114,20 +92,15 @@ Edit
     "course": "AI and Data Science"
   }
 }
-4. Delete a Student
-Endpoint: DELETE /students/:id
-Response:
-
+## **4. Delete a Student**
+**Endpoint:** DELETE /students/:id
+## Response:
 json
-Copy
-Edit
 {
   "message": "Student deleted successfully"
 }
-Project Structure
-bash
-Copy
-Edit
+### Project Structure
+````
 student-database-api/
 │── models/
 │   └── student.js         # Mongoose schema for Student
@@ -137,26 +110,20 @@ student-database-api/
 │── .env                   # MongoDB URI, PORT config
 │── package.json           # Project metadata & dependencies
 │── README.md              # Project documentation
-Dependencies
-express – Web framework for Node.js
 
-mongoose – ODM for MongoDB
-
-dotenv – Environment variable loader
-
-nodemon – Auto-reload server during development (devDependency)
-
-Testing the API
+````
+### Dependencies
+- *express** – Web framework for Node.js
+-*mongoose** – ODM for MongoDB
+-*dotenv** – Environment variable loader
+-*nodemon** – Auto-reload server during development (devDependency)
+## Testing the API
 Tools:
-Postman – For API request testing
+*Postman** – For API request testing
+*curl** – CLI tool for testing endpoints
 
-curl – CLI tool for testing endpoints
-
-Example cURL:
-bash
-Copy
-Edit
+### Example cURL:
 curl -X GET http://localhost:3000/students
-License
+### License
 This project is licensed under the MIT License.
 Feel free to use, modify, and distribute it.
