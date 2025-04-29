@@ -1,7 +1,7 @@
-#Student Database Management System#
+## Student Database Management System#
 This project is a CRUD (Create, Read, Update, Delete) API built with Node.js, Express, and MongoDB to manage student records efficiently.
 
-Features
+## Features
 Add a new student record
 
 Retrieve all student records
@@ -10,7 +10,7 @@ Update student details
 
 Delete a student record
 
-Prerequisites
+## Prerequisites
 Ensure the following are installed on your system:
 
 Node.js (v14 or higher)
@@ -29,19 +29,19 @@ bash
 Copy
 Edit
 npm install
-3. Set Up MongoDB
+## 3. Set Up MongoDB
 Use a local MongoDB or create a MongoDB Atlas cluster.
 
 Update the MongoDB connection URI in .env or server.js.
 
-4. Run the Server
+## 4. Run the Server
 bash
 Copy
 Edit
 npm start
 The API will start on http://localhost:3000 (or your specified port).
 
-API Endpoints
+## API Endpoints
 1. Create a New Student
 Endpoint: POST /students
 Request Body:
