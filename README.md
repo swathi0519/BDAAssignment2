@@ -1,4 +1,4 @@
-Student Database Management System
+STUDENT DATABASE MANAGEMENT SYSTEM
 This project is a CRUD (Create, Read, Update, Delete) API built with Node.js, Express, and MongoDB to manage student records efficiently.
 
 Features
